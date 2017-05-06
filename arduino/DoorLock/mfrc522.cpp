@@ -199,7 +199,7 @@ MFRC522_Config(void)
 
     //ClearBitMask(Status2Reg, 0x08);		//MFCrypto1On=0
     //Write_MFRC522(RxSelReg, 0x86);		//RxWait = RxSelReg[5..0]
-    //Write_MFRC522(RFCfgReg, 0x7F);   		//RxGain = 48dB
+    Write_MFRC522(RFCfgReg, 0x7F);   		//RxGain = 48dB
     //Serial.println(Read_MFRC522(VersionReg), HEX);
 
     AntennaOn();

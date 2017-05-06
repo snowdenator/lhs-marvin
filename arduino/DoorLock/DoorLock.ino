@@ -262,8 +262,7 @@ enum {
     MSG_KEY_HASH = 'H',
 };
 
-static void
-init_rfid(void)
+static void init_rfid()
 {
   MFRC522_Init();
 }
